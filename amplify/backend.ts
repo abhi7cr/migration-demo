@@ -18,11 +18,11 @@ cfnUserPool.policies = {
         temporaryPasswordValidityDays: 7
     }
 };
-cfnUserPool.applyRemovalPolicy(RemovalPolicy.RETAIN, { applyToUpdateReplacePolicy: true })
+cfnUserPool.applyRemovalPolicy(RemovalPolicy.RETAIN, { applyToUpdateReplacePolicy: false })
 const cfnIdentityPool = backend.auth.resources.cfnResources.cfnIdentityPool;
 cfnIdentityPool.identityPoolName = "testmigrationdemoede58da3_identitypool_ede58da3__dev";
 cfnIdentityPool.allowUnauthenticatedIdentities = false;
-cfnIdentityPool.applyRemovalPolicy(RemovalPolicy.RETAIN, { applyToUpdateReplacePolicy: true })
+cfnIdentityPool.applyRemovalPolicy(RemovalPolicy.RETAIN, { applyToUpdateReplacePolicy: false })
 const userPool = backend.auth.resources.userPool;
 userPool.addClient("eu-central-1_ScKfp9A7b", {
     disableOAuth: true,
