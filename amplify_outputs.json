@@ -1,9 +1,9 @@
 {
   "auth": {
-    "user_pool_id": "eu-central-1_ueceGIjBw",
+    "user_pool_id": "eu-central-1_ScKfp9A7b",
     "aws_region": "eu-central-1",
-    "user_pool_client_id": "6abqbbrs7rpgv86umrbfmjtmkm",
-    "identity_pool_id": "eu-central-1:591f07de-efde-47db-9f2e-86ddef54db91",
+    "user_pool_client_id": "5oq4pqu4hjf34pip32u7jmhbs1",
+    "identity_pool_id": "eu-central-1:f1b671e4-f7c5-453d-b361-d9b9f7edf623",
     "mfa_methods": [],
     "standard_required_attributes": [
       "email"
@@ -12,7 +12,6 @@
     "user_verification_types": [
       "email"
     ],
-    "groups": [],
     "mfa_configuration": "NONE",
     "password_policy": {
       "min_length": 8,
@@ -23,5 +22,5 @@
     },
     "unauthenticated_identities_enabled": false
   },
-  "version": "1.3"
+  "version": "1.1"
 }
