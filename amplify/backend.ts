@@ -24,7 +24,7 @@ cfnIdentityPool.identityPoolName = "testmigrationdemoede58da3_identitypool_ede58
 cfnIdentityPool.allowUnauthenticatedIdentities = false;
 cfnIdentityPool.applyRemovalPolicy(RemovalPolicy.RETAIN, { applyToUpdateReplacePolicy: false })
 const userPool = backend.auth.resources.userPool;
-userPool.addClient("eu-central-1_ScKfp9A7b", {
+userPool.addClient("appClient", {
     disableOAuth: true,
     authSessionValidity: Duration.minutes(3),
     userPoolClientName: "testmiede58da3_app_client",
